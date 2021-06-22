@@ -1,0 +1,7 @@
+{
+  "name": "Managedigital",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

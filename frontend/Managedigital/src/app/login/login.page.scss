@@ -1,0 +1,29 @@
+ion-content {
+    --background: url(../../assets/img/login.png) no-repeat center/cover fixed;
+    height:auto;
+    background-color: white;
+    font-family: 'Prompt', sans-serif;
+}
+ion-title{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding-top:2em;
+}
+ion-card-content{
+    color: black;
+    text-align: center;
+    font-size:24px;
+    padding-top:5em;
+}
+ion-label{
+   padding-right:9em;
+    font-size:16px;
+    color:gray;
+    padding-top:30px;
+}
+ion-button{
+    margin-top:0em;
+    height:3em;
+    font-family: 'Prompt', sans-serif;
+  }

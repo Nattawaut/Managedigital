@@ -1,0 +1,30 @@
+ion-content {
+    --background: url(../../assets/img/welcome.png) no-repeat center/cover fixed;
+     height:auto;
+     background-color: white;
+     font-family: 'Prompt', sans-serif;  
+   }
+ ion-card-content{
+     color: black;
+     text-align: center;
+     /* padding-left:2em; */
+     font-size:24px;
+     width: auto;
+     padding-top:4em;
+ }
+ ion-button{
+   margin-top:10em;
+ }
+ ion-title{
+   font-size: 30px;
+   color: white;
+   text-align: center;
+   padding-top:2em;
+ }
+ ion-row{
+   padding-top:2em;
+   height:3em;
+ }
+ ion-button{
+  font-family: 'Prompt', sans-serif;  
+}

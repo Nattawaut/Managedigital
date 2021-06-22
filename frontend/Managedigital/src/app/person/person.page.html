@@ -1,0 +1,64 @@
+<ion-content [fullscreen]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button  [routerLink]="['/index']" >
+        <ion-icon name="home-outline"></ion-icon>
+        <ion-label class="ti">หน้าหลัก</ion-label>
+      </ion-tab-button>
+      <ion-tab-button [routerLink]="['/cash']" >
+        <ion-icon name="wallet-outline"></ion-icon>
+        <ion-label class="ti">ประวัติชำระเงิน</ion-label>
+      </ion-tab-button>
+     <!--  <ion-tab-button  [routerLink]="['/history']">
+        <ion-icon name="clipboard-outline"></ion-icon>
+        <ion-label class="ti" >ประวัติชำระเงิน</ion-label>
+      </ion-tab-button> -->
+      <ion-tab-button [routerLink]="['/person']">
+        <ion-icon name="person-outline"></ion-icon>
+        <ion-label class="ti" >ข้อมูลส่วนตัว</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+  <ion-card-content>
+     <ion-label>ชื่อ-นามสกุล</ion-label>
+  <ion-card>  
+    <ion-item>
+      <ion-label class="fill">{{dataitem.firstname}}&nbsp;&nbsp;&nbsp;{{dataitem.lastname}}</ion-label>
+    </ion-item>
+  </ion-card>
+  <ion-label >เบอร์โทร</ion-label>
+  <ion-card>  
+    <ion-item>
+      <ion-label class="fill">{{dataitem.tel}}</ion-label>
+    </ion-item>
+  </ion-card>
+  <ion-label>อีเมลล์</ion-label>
+  <ion-card>  
+    <ion-item>
+      <ion-label class="fill">{{dataitem.email}}</ion-label>
+    </ion-item>
+  </ion-card>
+  <ion-label>ห้อพัก</ion-label>
+  <ion-card>  
+    <ion-item>
+      <ion-label class="fill">{{dataitem.room}}</ion-label>
+      <!-- <ion-icon name="create" style="zoom:2.0;" [routerLink]="['/updateperson/']"></ion-icon> -->
+    </ion-item>
+  </ion-card>
+  </ion-card-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" color="danger" [routerLink]="['/updateperson/']">แก้ไข้อมูล</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block"  [routerLink]="['/login']">ออกจากระบบ</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>    

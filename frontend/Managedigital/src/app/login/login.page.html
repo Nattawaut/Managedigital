@@ -1,0 +1,29 @@
+<ion-content [fullscreen]="true">
+  <ion-title>เข้าสู่ระบบ</ion-title>
+  <ion-card-content>
+    <ion-list lines="Full">
+        <ion-label>&nbsp;&nbsp;&nbsp;ชื่อผู้ใช้งาน</ion-label>
+      <ion-card>
+        <ion-item>
+          <ion-input placeholder="" type="Username" [(ngModel)]="logindata.Username"></ion-input>
+        </ion-item>
+      </ion-card>
+        <ion-label>รหัสผ่าน</ion-label>
+      <ion-card>
+        <ion-item>
+          <ion-input placeholder=""  type="password" [(ngModel)]="logindata.Password"></ion-input>
+      </ion-item>
+      </ion-card>
+     <!--  <ion-item>
+         <ion-label position="float" placeholder="Username">Username</ion-label>
+         <ion-input [(ngModel)]="logindata.Username" type="text" ></ion-input>
+      </ion-item>
+      <ion-item>
+       <ion-label position="float" placeholder="Paswword">Password</ion-label>
+       <ion-input [(ngModel)]="logindata.Password" type="text" maxlength="10"></ion-input>
+    </ion-item> -->
+    </ion-list><br/>
+             <ion-button expand="block" (click)="submit()">เข้าสู่ระบบ</ion-button>
+  </ion-card-content>
+ </ion-content>
+

@@ -1,0 +1,21 @@
+ion-content{
+    --background: url(../../assets/img/history.png) no-repeat center/cover fixed;
+    background-color: white;
+    font-family: 'Prompt', sans-serif;
+    height: auto;
+}
+ion-title{
+    font-size:28px;
+    color: white;
+    text-align: center;
+    padding-top:2em;
+}
+.ti{
+    font-size:9px;
+    font-family: 'Prompt', sans-serif;
+  }
+  ion-toolbar{
+    --background: url(../../assets/img/history.png) no-repeat center/cover fixed;
+    height:35px;
+    color: white;
+  }

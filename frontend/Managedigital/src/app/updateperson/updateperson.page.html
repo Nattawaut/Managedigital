@@ -1,0 +1,66 @@
+<ion-content [fullscreen]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button  [routerLink]="['/index']" >
+        <ion-icon name="home-outline"></ion-icon>
+        <ion-label class="ti">หน้าหลัก</ion-label>
+      </ion-tab-button>
+      <ion-tab-button [routerLink]="['/cash']" >
+        <ion-icon name="wallet-outline"></ion-icon>
+        <ion-label class="ti">ประวัติชำระเงิน</ion-label>
+      </ion-tab-button>
+     <!--  <ion-tab-button  [routerLink]="['/history']">
+        <ion-icon name="clipboard-outline"></ion-icon>
+        <ion-label class="ti" >ประวัติชำระเงิน</ion-label>
+      </ion-tab-button> -->
+      <ion-tab-button [routerLink]="['/person']">
+        <ion-icon name="person-outline"></ion-icon>
+        <ion-label class="ti" >ข้อมูลส่วนตัว</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+  <ion-card-content>
+    <ion-label>ชื่อ-นามสกุล</ion-label>
+ <ion-card>  
+   <ion-item>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-input [(ngModel)]="dataitem.firstname"  type="text"></ion-input>
+        </ion-col>
+        <ion-col>
+          <ion-input [(ngModel)]="dataitem.lastname" type="text"></ion-input>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+   </ion-item>
+ </ion-card>
+ <ion-label >เบอร์โทร</ion-label>
+ <ion-card>  
+   <ion-item>
+    <ion-input [(ngModel)]="dataitem.tel"  type="text" maxlength="10"></ion-input>
+   </ion-item>
+ </ion-card>
+ <ion-label>อีเมลล์</ion-label>
+ <ion-card>  
+   <ion-item>
+    <ion-input [(ngModel)]="dataitem.email"  type="text"></ion-input>
+   </ion-item>
+ </ion-card>
+ <ion-card>  
+  <ion-label>รหัสผ่าน</ion-label>
+  <ion-item>
+   <ion-input [(ngModel)]="dataitem.Password"  type="text"></ion-input>
+  </ion-item>
+</ion-card>
+ </ion-card-content>
+  <ion-col>
+    <ion-button type="button" (click)="Updateuser()"    routerLink="/index" color="primary" shape="full" expand="block">บันทึกการแก้ไข</ion-button>
+  </ion-col>
+ 
+</ion-content>    
